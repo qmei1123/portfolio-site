@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, div, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: base-9-sans, sans-serif;
+	font-size: 1em;
+	vertical-align: baseline;
+    text-decoration: none;
+    cursor: default;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html {
+    height: 100%;
+    padding-bottom: 30px;
+}
+body {
+    height: 100%;
+	line-height: 1;
+    background-color: #9E8273;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*----------------------------
+------------------------------
+----------------------------*/
+::-webkit-scrollbar
+{
+  width: 0;  /* for vertical scrollbars */
+  height: 0; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: none;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: none;
+}
+html {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    position: relative;
+    height: 100%;
+    background-image: url(../Assets/Images/Photos/Italy/IMG_0491-2.jpg);
+    background-size: 100vw;
+    padding: 30px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 4em;
+}
+h3 {
+    font-weight: 700;
+    font-size: 2em;
+    color: #FFBD16;
+}
+h4 {
+    font-weight: 400;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    font-weight: 400 !important;
+    color:#9e8273;
+}
+a:hover {
+    text-decoration: none;
+    color: #ffbd16;
+}
+p {
+    font-family: base-12-sans, sans-serif !important;
+    font-weight: 400;
+    font-size: .75em;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    white-space: normal;
+}
+.pop-row p {
+    position: relative;
+    padding: 20px;
+    max-width: 300px;
+}
+.row {
+    position: relative;
+    z-index: 0;
+}
+.col-sm-5 {
+    position: relative;
+    height: 100vh;
+    padding: 0px;
+    overflow-y: scroll;
+}
+.col-sm-7 {
+    position: relative;
+    height: 100vh;
+}
+.quotes {
+    letter-spacing: -2px;
+    height: auto;
+    font-size: 4em;
+}
+.image {
+    position: relative;
+    display: block;
+    overflow: hidden; 
+    max-width:37vw;
+    max-height: inherit;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    right: 0px;
+}
+.image:hover {
+    opacity: .7;
+}
+.pop-up {
+    position: sticky;
+    top: 50px;
+    z-index: 4;
+    position: absolute;
+    display: none;
+    background-color: #FFFBE3;
+    opacity: .99;
+    width: calc(100% - 60px);
+    height: calc(100vh - 60px);
+    overflow-x: scroll;
+    border-left: 40px solid #FFFBE3;
+    border-right: 40px solid #FFFBE3;
+}
+.pop-row {
+    position: relative;
+    z-index: inherit;
+    height:68vh;
+    overflow-x: scroll;
+    white-space: nowrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    top: calc(50% - 280px);
+}
+.img-gallery {
+    position: relative;
+    display: inline;
+    height: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 1 !important;
+}
+.gallery-text {
+    display: inline;
+    margin-left: -10px;
+    margin-right: 20px;
+    vertical-align:top !important;
+    border-left: 3px #FFBD16 solid;
+    padding-left: 10px;
+    max-width: 250px;
+}
+.vidcontainer {
+    position: relative;
+    margin: 50px;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow:hidden;
+}
+.vidcontainer iframe {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+}
+iframe {
+    margin-bottom: 50px;
+}
+.back {
+    z-index: 5;
+    position: fixed;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #FFBD16;
+}
+
+/*----------------------------
+------------------------------
+----------------------------*/
+@media only screen and (max-width: 1024px) {
+     html {
+        height: 100%;
+    }
+    body {
+        background: url(../Assets/Images/Photos/Italy/IMG_0491.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow:scroll;
+    }
+    .img-gallery {
+        position: relative; 
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 20px;
+        overflow-x: hidden;
+        opacity: 1 !important;
+    }
+    .gallery-text {
+        position: relative; 
+        display: block;
+        width: 75%;
+        height: auto;
+        margin: 20px;
+        opacity: 1 !important;
+        max-width: 75%;
+    }
+    .pop-up {
+        z-index: 4;
+        position: absolute;
+        display: none;
+        background-color: #FFFBE3;
+        opacity: .99;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        overflow-y: scroll;
+        border-left: 20px solid #FFFBE3;
+        border-right: 20px solid #FFFBE3;
+        border-bottom: 20px solid #FFFBE3;
+    }
+    .pop-row {
+        position: relative;
+        z-index: inherit;
+        overflow-y: scroll;
+        white-space: nowrap;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        height: auto;
+        top: 0px;
+    }
+    .pop-row p {
+        position: relative;
+        padding: 10px;
+        max-width: 100%;
+    }
+    .image {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width:100%;
+        max-height: inherit;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        right: 0px;
+    }
+    .col-sm-7 {
+        margin-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: auto;
+        width: 100%;
+    }
+    .col-sm-5 {
+        position: relative;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        overflow-y: auto;
+    }
+    .vidcontainer {
+        position: relative;
+        margin: 50px;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow:hidden;
+    }
+    .vidcontainer iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .quotes {
+        font-size: 2.2em;
+    }
+}
+@media only screen and (max-width: 767px) {
+    html {
+        height: 100%;
+    }
+    body {
+        background: url(../Assets/Images/Photos/Italy/IMG_0491.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        overflow:scroll;
+    }
+    .body-row {
+        overflow: hidden;
+    }
+    .img-gallery {
+        position: relative; 
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 20px;
+        overflow-x: hidden;
+        opacity: 1 !important;
+    }
+    .gallery-text {
+        position: relative; 
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 20px;
+        opacity: 1 !important;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        max-width: 100%;
+    }
+    .pop-up {
+        z-index: 4;
+        position: absolute;
+        display: none;
+        background-color: #FFFBE3;
+        opacity: .99;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        overflow-y: scroll;
+        border-left: 20px solid #FFFBE3;
+        border-right: 20px solid #FFFBE3;
+    }
+    .pop-row {
+        position: relative;
+        z-index: inherit;
+        overflow-y: scroll;
+        white-space: nowrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        top: calc(50% - 280px);
+    }
+    .image {
+        position: relative;
+        display: block;
+        overflow: hidden; 
+        max-width:100%;
+        max-height: inherit;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+        right: 0px;
+    }
+    .col-sm-7 {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        height: auto;
+        width: 100%;
+    }
+    .col-sm-5 {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        overflow-y:auto;
+    }
+    .vidcontainer {
+        position: relative;
+        margin: 50px;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow:hidden;
+    }
+    .vidcontainer iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .quotes {
+        font-size: 2.2em;
+    }
+}
