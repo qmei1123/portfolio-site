@@ -130,12 +130,10 @@ p {
     height: 100vh;
     padding: 0px;
     overflow-y: scroll;
-    z-index: 0;
 }
 .col-sm-7 {
-    position: fixed;
+    position: relative;
     height: 100vh;
-    z-index: 1;
 }
 .quotes {
     letter-spacing: -2px;
@@ -300,11 +298,13 @@ iframe {
         right: 0px;
     }
     .col-sm-7 {
+        position: fixed;
         margin-bottom: 20px;
         padding-left: 50px;
         padding-right: 50px;
         height: auto;
         width: 100%;
+        z-index: 1;
     }
     .col-sm-5 {
         position: relative;
@@ -312,6 +312,7 @@ iframe {
         padding-right: 20px;
         width: 100%;
         overflow-y: auto;
+        z-index: 0;
     }
     .vidcontainer {
         position: relative;
