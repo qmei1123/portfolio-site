@@ -153,9 +153,6 @@ p {
 .image:hover {
     opacity: .7;
 }
-.image-gallery:hover {
-    opacity: .7;
-}
 .pop-up {
     position: sticky;
     top: 50px;
@@ -186,7 +183,10 @@ p {
     height: 100%;
     margin-left: 20px;
     margin-right: 20px;
-    opacity: 1 !important;
+    opacity: 1;
+}
+.img-gallery:hover {
+    opacity: .7;
 }
 .gallery-text {
     display: inline;
