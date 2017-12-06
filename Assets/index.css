@@ -115,9 +115,6 @@ p {
     position: relative;
     white-space: normal;
 }
-img:hover {
-    cursor:url('../favicon.ico');
-}
 .pop-row p {
     position: relative;
     padding: 20px;
@@ -154,6 +151,9 @@ img:hover {
     right: 0px;
 }
 .image:hover {
+    opacity: .7;
+}
+.image-gallery:hover {
     opacity: .7;
 }
 .pop-up {
