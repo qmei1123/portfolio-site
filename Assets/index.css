@@ -235,6 +235,9 @@ iframe {
         background-size: cover;
         overflow:scroll;
     }
+    img {
+        cursor: pointer;
+    }
     .img-gallery {
         position: relative; 
         display: block;
